@@ -26,11 +26,10 @@ def fib(n) :
    # Assumes n >= 0
    if n <= 2 :
       return n
-   else :
-      result1 = fib(n - 1)
-      result2 = fib(n - 2)
-      print (f"result1: {result1} + result2: {result2} = {result1 + result2}")
-      return result1 + result2
+   a = fib(n - 1)
+   b = fib(n - 2)
+   print (f"result1: {a} + result2: {b} = {a + b}")
+   return a + b
 
 
 main()
