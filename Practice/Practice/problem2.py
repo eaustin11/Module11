@@ -11,7 +11,7 @@ calling mystery with n - 1.
 
 '''
 def main():
-   num = int('Enter a positive integer: ')
+   num = int(input('Enter a positive integer: '))
    result = mystery(num)
    print('Mystery Number:', result)
 
@@ -22,3 +22,4 @@ def mystery(n) :
    else :
       return mystery(n - 1) + n * n
    
+main()
